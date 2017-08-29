@@ -1,0 +1,64 @@
+{
+  "LOGIN": {
+    "TITLE": "Hello welcome to CMS4!",
+    "SELECT": "Change language",
+    "BUTTON": "Sign In",
+    "HELP": "Need help?",
+    "EMAIL": "Email",
+    "PASSWORD": "Password"
+  },
+  "DASHBOARD": {
+    "HEADING": "Dashboard",
+    "PROFILE": "Profile",
+    "SETTINGS": "Settings",
+    "LOGOUT": "Log Out",
+    "TEMPLATE": "Template",
+    "SECTION": {
+      "HEADER": {
+        "HEADER": "Header",
+        "BRAND": "Brand",
+        "PARAGRAPH": "Paragraph",
+        "BACKGROUND": {
+          "IMAGE": "Background Image",
+          "HELPER": "The image should have a dimension 333x222"
+        }
+      },
+      "NAVIGATIONBAR": {
+        "NAVIGATIONBAR": "Navigation Bar",
+        "LINKS": "Links"
+      },
+      "CONTENT": "Content",
+      "FOOTER": "Footer"
+    }
+  },
+  "TEMPLATE": {
+    "HEADERNAVBAR": {
+      "BRAND": "VERSE",
+      "HOME": "HOME",
+      "ABOUTUS": "ABOUT",
+      "JOURNAL": "JOURNAL",
+      "LOOKBOOK": "LOOK BOOK"
+    },
+    "HEADER": {
+      "BRAND": "SUMMER SEASON",
+      "PARAGRAPH": "A free, responsive, one page Bootstrap theme."
+    },
+    "SEASON": {
+      "BRAND": "This season",
+      "ABOUT": "This season can be epic with you!"
+    },
+    "FOLLOWUS": {
+      "FOLLOW": "Follow: @matiasceliz"
+    },
+    "FOOTER":{
+      "TITLE": "VERSE - Event Producer",
+      "ADDRESS": "Santa Cruz 1395",
+      "LOCATION": "(8300) Neuquen Capital",
+      "LINKS": "Links",
+      "HOME": "Home",
+      "DASHBOARD": "Dashboard",
+      "NEWSLETTER": "Newsletter",
+      "SIGNIN": "Sign In"
+    }
+  }
+}

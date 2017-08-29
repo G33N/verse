@@ -1,0 +1,49 @@
+<footer class="page-footer center-on-small-only">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4 col-md-4">
+        <address>
+          <h5>{{ 'TEMPLATE.FOOTER.TITLE' | translate }}</h5><br>
+          <p>{{ 'TEMPLATE.FOOTER.ADDRESS' | translate }}<br>
+          {{ 'TEMPLATE.FOOTER.LOCATION' | translate }}<br>
+          <a href="tel:+542994480458">Tel: (0299) 448-0458</a></p>
+        </address>
+        <address>
+          <a href="mailto:#">{{EMAIL}}</a><br>
+        </address>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <h5 class="title">{{ 'TEMPLATE.FOOTER.LINKS' | translate }}</h5>
+        <ul>
+          <li><a routerLink="home">{{ 'TEMPLATE.FOOTER.HOME' | translate }}</a></li>
+          <li><a routerLink="dashboard">{{ 'TEMPLATE.FOOTER.DASHBOARD' | translate }}</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <h5 class="tittle">{{ 'TEMPLATE.FOOTER.NEWSLETTER' | translate }}</h5>
+        <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail3">Email </label>
+            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+          </div>
+          <button type="submit" class="btn btn-primary">{{ 'TEMPLATE.FOOTER.SIGNIN' | translate }}</button>
+        </form>
+        <div class="social-buttons">
+          <ul>
+            <li class="inline"><a class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"> </i></a></li>
+            <li class="inline"><a class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"> </i></a></li>
+            <li class="inline"><a class="btn-floating btn-small btn-ins"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <select class="pull-right language" #langSelect (change)="translate.use(langSelect.value)">
+        <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+      </select>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container-fluid">
+      © 2017 Copyright: <a href="http://www.enlaceit.com.car"> Enlace IT </a>
+    </div>
+  </div>
+</footer>

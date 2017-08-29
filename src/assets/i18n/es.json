@@ -1,0 +1,64 @@
+{
+  "LOGIN": {
+    "TITLE": "Hola bienvenido a CMS4!",
+    "SELECT": "Change language",
+    "BUTTON": "Ingresar",
+    "HELP": "Necesita ayuda?",
+    "EMAIL": "Email",
+    "PASSWORD": "Contraseña"
+  },
+  "DASHBOARD": {
+    "HEADING": "Panel",
+    "PROFILE": "Perfil",
+    "SETTINGS": "Ajustes",
+    "LOGOUT": "Cerrar Sesion",
+    "TEMPLATE": "Plantilla",
+    "SECTION": {
+      "HEADER": {
+        "HEADER": "Encabezado",
+        "BRAND": "Marca",
+        "PARAGRAPH": "Parfafo",
+        "BACKGROUND": {
+          "IMAGE": "Imagen de fondo",
+          "HELPER": "La dimension de la imagen debe ser 333x222"
+        }
+      },
+      "NAVIGATIONBAR": {
+        "NAVIGATIONBAR": "Barra de Navegacion",
+        "LINKS": "Enlaces"
+      },
+      "CONTENT": "Contenido",
+      "FOOTER": "Pie de pagina"
+    }
+  },
+  "TEMPLATE": {
+    "HEADERNAVBAR": {
+      "BRAND": "VERSE",
+      "HOME": "INICIO",
+      "ABOUTUS": "NOSOTROS",
+      "JOURNAL": "REVISTA",
+      "LOOKBOOK": "BOOKS"
+    },
+    "HEADER": {
+      "BRAND": "TEMPORADA VERANO",
+      "PARAGRAPH": "Una temporada re top como debe ser"
+    },
+    "SEASON": {
+      "BRAND": "Esta temporada",
+      "ABOUT": "Esta temporada puede ser epica con vos!"
+    },
+    "FOLLOWUS": {
+      "FOLLOW": "Siguenos: @matiasceliz"
+    },
+    "FOOTER":{
+      "TITLE": "VERSE - Productora de Eventos",
+      "ADDRESS": "Santa Cruz 1395",
+      "LOCATION": "(8300) Neuquen Capital",
+      "LINKS": "Enlaces",
+      "HOME": "Inicio",
+      "DASHBOARD": "Administrador",
+      "NEWSLETTER": "Newsletter",
+      "SIGNIN": "Registrar"
+    }
+  }
+}

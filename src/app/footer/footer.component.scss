@@ -1,0 +1,148 @@
+/* FOOTER */
+
+footer {
+  div address {
+    padding-left: 2em;
+  }
+  &.page-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #404040;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+    .footer-copyright {
+      overflow: hidden;
+      height: 50px;
+      line-height: 50px;
+      color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(0, 0, 0, 0.2);
+      text-align: center;
+      font-size: .9rem;
+    }
+    .title {
+      text-transform: uppercase;
+    }
+    ul {
+      display: inline;
+      list-style-type: none;
+      width: auto;
+      height: auto;
+      padding-left: 0.3em;
+    }
+  }
+}
+
+li.inline {
+  display: inline;
+  list-style-type: none;
+  width: auto;
+  height: auto;
+  padding-left: 0.3em;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  color: #FFF;
+  background: transparent;
+  border-color: #FFF;
+  border: solid 0.1em;
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* SOCIAL BUTTON */
+
+.btn-floating {
+  &.btn-sm i, &.btn-small i, &.wishlist i {
+    font-size: 1.5em;
+    height: 2em;
+    width: 2em;
+    text-shadow: center;
+    line-height: 2em;
+    display: table;
+  }
+  i {
+    width: inherit;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+  }
+  display: inline-block;
+  color: #fff;
+}
+
+a.btn-floating.btn-small.btn-fb.waves-effect.waves-light .btn-floating {
+  display: inline-block;
+  color: #fff;
+}
+
+.btn-floating {
+  i {
+    display: inline-block;
+    color: #fff;
+  }
+  cursor: pointer;
+}
+
+.card .card-reveal .card-title, .card-wrapper .back .card-title {
+  cursor: pointer;
+}
+
+i {
+  &.fa {
+    border-radius: 50%;
+  }
+  &.fa-facebook {
+    background: #3B5998;
+  }
+  &.fa-twitter {
+    background: #55ACEE;
+  }
+  &.fa-instagram {
+    background: #2E5E86;
+  }
+}
+
+.language {
+  border-color: rgba(93, 149, 99, 1);
+  color: #9d9d9d;
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none !important;
+  float: left;
+  height: 30px;
+  margin-top: 10px;
+  padding: 5px 5px;
+  font-size: 18px;
+  line-height: 18px;
+  &::-ms-expand {
+    display: none;
+  }
+  &:hover, &:active {
+    border-color: rgba(93, 149, 99, 0.8);
+  }
+}
+
+/* SOCIAL BUTTONS TAB */
+
+.social-buttons {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}

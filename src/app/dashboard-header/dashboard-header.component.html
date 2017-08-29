@@ -1,0 +1,40 @@
+<h1 class="page-header">{{ 'DASHBOARD.HEADING' | translate }} <small>{{ 'DASHBOARD.SECTION.HEADER' | translate }}</small></h1>
+
+<h4>{{ 'DASHBOARD.SECTION.HEADER.HEADER' | translate }}</h4>
+<hr>
+<form>
+  <div class="form-group">
+    <label for="headerBrand">{{ 'DASHBOARD.SECTION.HEADER.BRAND' | translate }}</label>
+    <input type="text" class="form-control" id="headerBrand" value="{{'TEMPLATE.HEADER.BRAND' | translate }}">
+  </div>
+  <div class="form-group">
+    <label for="headerParagraph">{{ 'DASHBOARD.SECTION.HEADER.PARAGRAPH' | translate }}</label>
+    <input type="text" class="form-control" id="headerParagraph" value="{{'TEMPLATE.HEADER.PARAGRAPH' | translate }}">
+  </div>
+  <div class="form-group">
+    <label for="backgroundImage">{{ 'DASHBOARD.SECTION.HEADER.BACKGROUND.IMAGE' | translate }}</label>
+    <input type="file" id="backgroundImage">
+    <p class="help-block">{{ 'DASHBOARD.SECTION.HEADER.BACKGROUND.HELPER' | translate }}</p>
+  </div>
+  <h4>{{ 'DASHBOARD.SECTION.NAVIGATIONBAR.NAVIGATIONBAR' | translate }}</h4>
+  <hr>
+  <div class="form-group">
+    <label for="headerNavbarBrand">{{ 'DASHBOARD.SECTION.NAVIGATIONBAR.LINKS' | translate }}</label>
+    <ul>
+      <li *ngFor="let result of results.TEMPLATE.HEADERNAVBAR | ObjectArrayPipe">
+        <input type="text" class="form-control" id="{{result}}" value="{{result}}">
+      </li>
+    </ul>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

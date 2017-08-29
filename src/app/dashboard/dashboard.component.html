@@ -1,0 +1,59 @@
+<div id="wrapper">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+      <a class="navbar-brand" href="index.html">CMS4</a>
+    </div>
+    <ul class="nav navbar-right top-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> {{PROFILE.NAME}} <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#"><i class="fa fa-fw fa-user"></i> {{ 'DASHBOARD.PROFILE' | translate }}</a>
+          </li>
+          <li>
+            <a routerLink="/dashboard/settings"><i class="fa fa-fw fa-gear"></i> {{ 'DASHBOARD.SETTINGS' | translate }}</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a routerLink="/login"><i class="fa fa-fw fa-power-off"></i> {{ 'DASHBOARD.LOGOUT' | translate }}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <select class="navbar-language" #langSelect (change)="translate.use(langSelect.value)">
+      <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+    </select>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav">
+        <li>
+          <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> {{ 'DASHBOARD.TEMPLATE' | translate }} <i class="fa fa-fw fa-caret-down"></i></a>
+          <ul id="demo" class="collapse">
+            <li>
+              <a routerLink="/dashboard/header">{{ 'DASHBOARD.SECTION.HEADER.HEADER' | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/dashboard/content">{{ 'DASHBOARD.SECTION.CONTENT' | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/dashboard/footer">{{ 'DASHBOARD.SECTION.FOOTER' | translate }}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="page-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>

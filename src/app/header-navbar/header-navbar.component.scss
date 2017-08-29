@@ -1,0 +1,29 @@
+/* NAVBAR CUSTOM */
+
+.nav.navbar-nav li a {
+  color: #FFF;
+  background: transparent;
+}
+
+.navbar-default {
+  padding-top: 1.5em;
+  background: transparent;
+  border: none;
+}
+
+.navbar-brand-centered {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 160px;
+  text-align: center;
+  background-color: transparent;
+  color: #FFF;
+  font-size: 2em;
+}
+
+.navbar > {
+  .container .navbar-brand-centered, .container-fluid .navbar-brand-centered {
+    margin-left: -80px;
+  }
+}

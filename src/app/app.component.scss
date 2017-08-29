@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* SETS */
+
+.intro, body, html {
+  width: 100%;
+}
+
+a {
+  color: #0275d8;
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+  cursor: pointer;
+}
+
+div.container-fluid {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+h4 {
+  margin-top: 3em;
+}
